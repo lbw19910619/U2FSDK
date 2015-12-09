@@ -8,13 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		5A078A561C04663200F0C06D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A078A551C04663200F0C06D /* main.m */; };
-		5A078A591C04663200F0C06D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A078A581C04663200F0C06D /* AppDelegate.m */; };
-		5A078A5C1C04663200F0C06D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A078A5B1C04663200F0C06D /* ViewController.m */; };
-		5A078A5F1C04663200F0C06D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A078A5D1C04663200F0C06D /* Main.storyboard */; };
 		5A078A611C04663200F0C06D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A078A601C04663200F0C06D /* Assets.xcassets */; };
 		5A078A641C04663200F0C06D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A078A621C04663200F0C06D /* LaunchScreen.storyboard */; };
 		5A078A6F1C04663200F0C06D /* U2FSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A078A6E1C04663200F0C06D /* U2FSDKTests.m */; };
 		5A078A7A1C04663200F0C06D /* U2FSDKUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A078A791C04663200F0C06D /* U2FSDKUITests.m */; };
+		5A078A921C046A7600F0C06D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A078A911C046A7600F0C06D /* AppDelegate.m */; };
+		5A078A951C046BD400F0C06D /* Authenticate_U2F.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A078A941C046BD400F0C06D /* Authenticate_U2F.m */; };
+		5A078A991C046D1500F0C06D /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A078A971C046D1500F0C06D /* GTMBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5A078A9D1C04769100F0C06D /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A078A9C1C04769100F0C06D /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5A0B3A8F1C06FC7D003B78B6 /* RegisterInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0B3A8E1C06FC7D003B78B6 /* RegisterInfo.m */; };
+		5A0B3A921C070064003B78B6 /* VertifyInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0B3A911C070064003B78B6 /* VertifyInfo.m */; };
+		5A0B3A951C0700A2003B78B6 /* U2FStartRegisterRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0B3A941C0700A2003B78B6 /* U2FStartRegisterRequest.m */; };
+		5A0B3A981C0709DF003B78B6 /* Register_U2F.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0B3A971C0709DF003B78B6 /* Register_U2F.m */; };
+		5A0B3A9B1C071D64003B78B6 /* U2FStartVirtifyRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0B3A9A1C071D64003B78B6 /* U2FStartVirtifyRequest.m */; };
+		5A110C8B1C083C7B0043EC96 /* UIUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A110C8A1C083C7B0043EC96 /* UIUtils.m */; };
+		5A110CC31C0879520043EC96 /* RegisterSuccessData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A110CC21C0879520043EC96 /* RegisterSuccessData.m */; };
+		5A110CC61C087A570043EC96 /* VertifySuccessData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A110CC51C087A570043EC96 /* VertifySuccessData.m */; };
+		5A5C553A1C0548DC00338670 /* BlePeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5C55391C0548DC00338670 /* BlePeripheral.m */; };
+		5A5C55B01C0564A400338670 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5C55AF1C0564A400338670 /* ViewController.m */; };
+		5A5C55B61C05699900338670 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A5C55B51C05699900338670 /* ViewController.xib */; };
+		5A5C55B81C0569E000338670 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A5C55B71C0569E000338670 /* Default-568h@2x.png */; };
+		5AB2063C1C0BD6E600003AA7 /* BLEList.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB2063B1C0BD6E600003AA7 /* BLEList.m */; };
+		5AB2063E1C0BECC000003AA7 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB2063D1C0BECC000003AA7 /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,11 +52,6 @@
 /* Begin PBXFileReference section */
 		5A078A511C04663200F0C06D /* U2FSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = U2FSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A078A551C04663200F0C06D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5A078A571C04663200F0C06D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		5A078A581C04663200F0C06D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5A078A5A1C04663200F0C06D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5A078A5B1C04663200F0C06D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		5A078A5E1C04663200F0C06D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5A078A601C04663200F0C06D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A078A631C04663200F0C06D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A078A651C04663200F0C06D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +61,42 @@
 		5A078A751C04663200F0C06D /* U2FSDKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = U2FSDKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A078A791C04663200F0C06D /* U2FSDKUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = U2FSDKUITests.m; sourceTree = "<group>"; };
 		5A078A7B1C04663300F0C06D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A078A901C046A7600F0C06D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5A078A911C046A7600F0C06D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5A078A931C046BD400F0C06D /* Authenticate_U2F.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Authenticate_U2F.h; sourceTree = "<group>"; };
+		5A078A941C046BD400F0C06D /* Authenticate_U2F.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Authenticate_U2F.m; sourceTree = "<group>"; };
+		5A078A961C046D1500F0C06D /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		5A078A971C046D1500F0C06D /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		5A078A981C046D1500F0C06D /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		5A078A9B1C04769100F0C06D /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		5A078A9C1C04769100F0C06D /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		5A0B3A8D1C06FC7D003B78B6 /* RegisterInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterInfo.h; sourceTree = "<group>"; };
+		5A0B3A8E1C06FC7D003B78B6 /* RegisterInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterInfo.m; sourceTree = "<group>"; };
+		5A0B3A901C070064003B78B6 /* VertifyInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VertifyInfo.h; sourceTree = "<group>"; };
+		5A0B3A911C070064003B78B6 /* VertifyInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VertifyInfo.m; sourceTree = "<group>"; };
+		5A0B3A931C0700A2003B78B6 /* U2FStartRegisterRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = U2FStartRegisterRequest.h; sourceTree = "<group>"; };
+		5A0B3A941C0700A2003B78B6 /* U2FStartRegisterRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = U2FStartRegisterRequest.m; sourceTree = "<group>"; };
+		5A0B3A961C0709DF003B78B6 /* Register_U2F.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Register_U2F.h; sourceTree = "<group>"; };
+		5A0B3A971C0709DF003B78B6 /* Register_U2F.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Register_U2F.m; sourceTree = "<group>"; };
+		5A0B3A991C071D64003B78B6 /* U2FStartVirtifyRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = U2FStartVirtifyRequest.h; sourceTree = "<group>"; };
+		5A0B3A9A1C071D64003B78B6 /* U2FStartVirtifyRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = U2FStartVirtifyRequest.m; sourceTree = "<group>"; };
+		5A110C891C083C7B0043EC96 /* UIUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIUtils.h; sourceTree = "<group>"; };
+		5A110C8A1C083C7B0043EC96 /* UIUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIUtils.m; sourceTree = "<group>"; };
+		5A110CC01C0871480043EC96 /* U2F_Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = U2F_Protocol.h; sourceTree = "<group>"; };
+		5A110CC11C0879520043EC96 /* RegisterSuccessData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterSuccessData.h; sourceTree = "<group>"; };
+		5A110CC21C0879520043EC96 /* RegisterSuccessData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterSuccessData.m; sourceTree = "<group>"; };
+		5A110CC41C087A570043EC96 /* VertifySuccessData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VertifySuccessData.h; sourceTree = "<group>"; };
+		5A110CC51C087A570043EC96 /* VertifySuccessData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VertifySuccessData.m; sourceTree = "<group>"; };
+		5A1ECC9C1C0FEEEF00DE1C40 /* Logfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Logfile.h; sourceTree = "<group>"; };
+		5A5C55381C0548D800338670 /* BlePeripheral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlePeripheral.h; sourceTree = "<group>"; };
+		5A5C55391C0548DC00338670 /* BlePeripheral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlePeripheral.m; sourceTree = "<group>"; };
+		5A5C55AE1C0564A400338670 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5A5C55AF1C0564A400338670 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5A5C55B51C05699900338670 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		5A5C55B71C0569E000338670 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "U2FSDK/Default-568h@2x.png"; sourceTree = "<group>"; };
+		5AB2063A1C0BD6E600003AA7 /* BLEList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEList.h; sourceTree = "<group>"; };
+		5AB2063B1C0BD6E600003AA7 /* BLEList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEList.m; sourceTree = "<group>"; };
+		5AB2063D1C0BECC000003AA7 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AB2063E1C0BECC000003AA7 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +128,8 @@
 		5A078A481C04663200F0C06D = {
 			isa = PBXGroup;
 			children = (
+				5AB2063D1C0BECC000003AA7 /* CoreBluetooth.framework */,
+				5A5C55B71C0569E000338670 /* Default-568h@2x.png */,
 				5A078A531C04663200F0C06D /* U2FSDK */,
 				5A078A6D1C04663200F0C06D /* U2FSDKTests */,
 				5A078A781C04663200F0C06D /* U2FSDKUITests */,
@@ -101,11 +150,15 @@
 		5A078A531C04663200F0C06D /* U2FSDK */ = {
 			isa = PBXGroup;
 			children = (
-				5A078A571C04663200F0C06D /* AppDelegate.h */,
-				5A078A581C04663200F0C06D /* AppDelegate.m */,
-				5A078A5A1C04663200F0C06D /* ViewController.h */,
-				5A078A5B1C04663200F0C06D /* ViewController.m */,
-				5A078A5D1C04663200F0C06D /* Main.storyboard */,
+				5A110C841C08270B0043EC96 /* Model */,
+				5AB2063A1C0BD6E600003AA7 /* BLEList.h */,
+				5AB2063B1C0BD6E600003AA7 /* BLEList.m */,
+				5A0B3A961C0709DF003B78B6 /* Register_U2F.h */,
+				5A0B3A971C0709DF003B78B6 /* Register_U2F.m */,
+				5A078A931C046BD400F0C06D /* Authenticate_U2F.h */,
+				5A078A941C046BD400F0C06D /* Authenticate_U2F.m */,
+				5A078A9E1C04781F00F0C06D /* JSON */,
+				5A078A9A1C046D1C00F0C06D /* GTMBase64 */,
 				5A078A601C04663200F0C06D /* Assets.xcassets */,
 				5A078A621C04663200F0C06D /* LaunchScreen.storyboard */,
 				5A078A651C04663200F0C06D /* Info.plist */,
@@ -117,6 +170,11 @@
 		5A078A541C04663200F0C06D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5A078A901C046A7600F0C06D /* AppDelegate.h */,
+				5A078A911C046A7600F0C06D /* AppDelegate.m */,
+				5A5C55AE1C0564A400338670 /* ViewController.h */,
+				5A5C55AF1C0564A400338670 /* ViewController.m */,
+				5A5C55B51C05699900338670 /* ViewController.xib */,
 				5A078A551C04663200F0C06D /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +196,50 @@
 				5A078A7B1C04663300F0C06D /* Info.plist */,
 			);
 			path = U2FSDKUITests;
+			sourceTree = "<group>";
+		};
+		5A078A9A1C046D1C00F0C06D /* GTMBase64 */ = {
+			isa = PBXGroup;
+			children = (
+				5A078A961C046D1500F0C06D /* GTMBase64.h */,
+				5A078A971C046D1500F0C06D /* GTMBase64.m */,
+				5A078A981C046D1500F0C06D /* GTMDefines.h */,
+			);
+			name = GTMBase64;
+			sourceTree = "<group>";
+		};
+		5A078A9E1C04781F00F0C06D /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				5A078A9B1C04769100F0C06D /* JSONKit.h */,
+				5A078A9C1C04769100F0C06D /* JSONKit.m */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+		5A110C841C08270B0043EC96 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5A110CC01C0871480043EC96 /* U2F_Protocol.h */,
+				5A1ECC9C1C0FEEEF00DE1C40 /* Logfile.h */,
+				5A110CC11C0879520043EC96 /* RegisterSuccessData.h */,
+				5A110CC21C0879520043EC96 /* RegisterSuccessData.m */,
+				5A110CC41C087A570043EC96 /* VertifySuccessData.h */,
+				5A110CC51C087A570043EC96 /* VertifySuccessData.m */,
+				5A0B3A931C0700A2003B78B6 /* U2FStartRegisterRequest.h */,
+				5A0B3A941C0700A2003B78B6 /* U2FStartRegisterRequest.m */,
+				5A0B3A991C071D64003B78B6 /* U2FStartVirtifyRequest.h */,
+				5A0B3A9A1C071D64003B78B6 /* U2FStartVirtifyRequest.m */,
+				5A0B3A8D1C06FC7D003B78B6 /* RegisterInfo.h */,
+				5A0B3A8E1C06FC7D003B78B6 /* RegisterInfo.m */,
+				5A0B3A901C070064003B78B6 /* VertifyInfo.h */,
+				5A0B3A911C070064003B78B6 /* VertifyInfo.m */,
+				5A5C55381C0548D800338670 /* BlePeripheral.h */,
+				5A5C55391C0548DC00338670 /* BlePeripheral.m */,
+				5A110C891C083C7B0043EC96 /* UIUtils.h */,
+				5A110C8A1C083C7B0043EC96 /* UIUtils.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,8 +346,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A078A641C04663200F0C06D /* LaunchScreen.storyboard in Resources */,
+				5A5C55B81C0569E000338670 /* Default-568h@2x.png in Resources */,
+				5A5C55B61C05699900338670 /* ViewController.xib in Resources */,
 				5A078A611C04663200F0C06D /* Assets.xcassets in Resources */,
-				5A078A5F1C04663200F0C06D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,9 +373,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A078A5C1C04663200F0C06D /* ViewController.m in Sources */,
-				5A078A591C04663200F0C06D /* AppDelegate.m in Sources */,
+				5A0B3A981C0709DF003B78B6 /* Register_U2F.m in Sources */,
+				5A5C55B01C0564A400338670 /* ViewController.m in Sources */,
+				5A078A951C046BD400F0C06D /* Authenticate_U2F.m in Sources */,
+				5AB2063C1C0BD6E600003AA7 /* BLEList.m in Sources */,
+				5A5C553A1C0548DC00338670 /* BlePeripheral.m in Sources */,
+				5A110CC61C087A570043EC96 /* VertifySuccessData.m in Sources */,
+				5A0B3A8F1C06FC7D003B78B6 /* RegisterInfo.m in Sources */,
 				5A078A561C04663200F0C06D /* main.m in Sources */,
+				5A0B3A921C070064003B78B6 /* VertifyInfo.m in Sources */,
+				5A110CC31C0879520043EC96 /* RegisterSuccessData.m in Sources */,
+				5A078A921C046A7600F0C06D /* AppDelegate.m in Sources */,
+				5A0B3A9B1C071D64003B78B6 /* U2FStartVirtifyRequest.m in Sources */,
+				5A0B3A951C0700A2003B78B6 /* U2FStartRegisterRequest.m in Sources */,
+				5A110C8B1C083C7B0043EC96 /* UIUtils.m in Sources */,
+				5A078A9D1C04769100F0C06D /* JSONKit.m in Sources */,
+				5A078A991C046D1500F0C06D /* GTMBase64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,14 +424,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5A078A5D1C04663200F0C06D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5A078A5E1C04663200F0C06D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5A078A621C04663200F0C06D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -344,6 +452,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -388,6 +497,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -498,6 +608,7 @@
 				5A078A801C04663300F0C06D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A078A811C04663300F0C06D /* Build configuration list for PBXNativeTarget "U2FSDKTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +617,7 @@
 				5A078A831C04663300F0C06D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A078A841C04663300F0C06D /* Build configuration list for PBXNativeTarget "U2FSDKUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +626,7 @@
 				5A078A861C04663300F0C06D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

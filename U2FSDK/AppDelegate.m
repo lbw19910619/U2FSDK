@@ -1,23 +1,58 @@
 //
 //  AppDelegate.m
-//  U2FSDK
+//  U2F SDK
 //
-//  Created by 九州云腾 on 15/11/24.
+//  Created by 九州云腾 on 15/11/19.
 //  Copyright © 2015年 九州云腾. All rights reserved.
 //
 
 #import "AppDelegate.h"
-
+#import "Logfile.h"
+#import "ViewController.h"
+#import <CoreTelephony/CTCallCenter.h>
+#import <CoreTelephony/CTCall.h>
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
-
+@synthesize window;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    return YES;
+   // [self redirectNSlogToDocumentFolder];
+    mainView=[[ViewController alloc]init];
+    self.window=[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController=mainView;
+    [self.window makeKeyAndVisible];
+    //COUNT;
+    //来电提醒
+   __block  CTCallCenter *callCenter = [[CTCallCenter alloc] init];
+    callCenter.callEventHandler = ^(CTCall* call) {
+        if ([call.callState isEqualToString:CTCallStateDisconnected])
+        {
+            NSLog(@"Call has been disconnected");
+        }
+        else if ([call.callState isEqualToString:CTCallStateConnected])
+        {
+            NSLog(@"Call has just been connected");
+        }
+        else if([call.callState isEqualToString:CTCallStateIncoming])
+        {
+            NSLog(@"Call is incoming");
+        }
+        else if ([call.callState isEqualToString:CTCallStateDialing])
+        {
+            NSLog(@"call is dialing");
+        }
+        else 
+        { 
+            NSLog(@"Nothing is done"); 
+        }
+        
+    };
+    
+     return YES;
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -40,6 +75,32 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+- (void)redirectNSlogToDocumentFolder
+
+{
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    
+    NSString *documentDirectory = [paths objectAtIndex:0];
+    
+    NSString *fileName = [NSString stringWithFormat:@"MrNSLog.log"];// 注意不是NSData!
+    
+    NSString *logFilePath = [documentDirectory stringByAppendingPathComponent:fileName];
+    
+    NSLog(@"%@",logFilePath);
+    // 先删除已经存在的文件
+    
+    NSFileManager *defaultManager = [NSFileManager defaultManager];
+    
+    [defaultManager removeItemAtPath:logFilePath error:nil];
+    // 将log输入到文件
+    
+    freopen([logFilePath cStringUsingEncoding:NSASCIIStringEncoding], "a+", stdout);
+    
+    freopen([logFilePath cStringUsingEncoding:NSASCIIStringEncoding], "a+", stderr);
+    
+    
 }
 
 @end
